@@ -15,11 +15,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 </head>
 
+
 <!-- We gave the body an id to be able to change the background
 color in the JavaScript file later on. Change the class to "rainy"
 and see what happens. PS. You can remove it so it starts out without
 any class at all. We will add classes in the JavaScript file instead -->
-<body id="body" class="">
+<body id="body" class="sunny">
 
   <!-- We gave this section and the descendant divs a class name
   to be able to style it according to the design. Feel free to
@@ -30,8 +31,10 @@ any class at all. We will add classes in the JavaScript file instead -->
       innerHTML after we fetched the weather data in the JavaScript.
       We put in some dummy data so that you can see how it will look,
       but we will replace this with the data from the API -->
+      <h1 id="headline"></h1>
+      <p id="shortDescription"></p> 
       <p>
-        <span id="shortDescription"></span> | <span id="temperature"></span>
+        <span id="temperature"></span> ➟ <span id="feelsLike"></span>
       </p>
       <p id="sunrise"></p>
       <p id="sunset"></p>
@@ -44,7 +47,7 @@ any class at all. We will add classes in the JavaScript file instead -->
       <h2 id="description"></h2>
     </div>
   </section>
-
+  <h3>Forecast for the next five days:</h3>
   <!-- Another id to be able to add the forecast data to our HTML. -->
   <section id="forecast" class="forecast">
   </section>
