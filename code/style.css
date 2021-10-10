@@ -5,26 +5,26 @@ and desktop. Feel free to change the styling! */
 /* Styling of the body. */
 body {
   font-family: 'Montserrat', sans-serif;
-  margin: 30px;
+  margin: 25px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 /* Styling of the body when the classname is "cloudy" */
-.cloudy {
+.clouds {
   background: #F4F7F8;
   color: #F47775;
 }
 
 /* Styling of the body when the classname is "rainy" */
-.rainy {
+.rain {
   background: #A3DEF7;
   color: #164A68;
 }
 
 /* Styling of the body when the classname is "sunny" */
-.sunny {
+.clear {
   background: #F7E9B9;
   color: #2A5510;
 }
@@ -47,14 +47,20 @@ p {
   margin: 2px;
 }
 
-/* Styling of the icon and description */
+/* Styling of the icon and description 
+.todays-description div {
+  display: flex;
+  justify-content: space-between;
+}
+*/
 .todays-description h2 {
-  font-size: 32px;
+  font-size: 30px;
   max-width: 400px;
 }
 
 .todays-description img {
-  height: 70px;
+  height: 64px;
+  
 }
 
 
@@ -88,15 +94,15 @@ input {
   margin: 30px 0;
 }
 
-.cloudy input, .cloudy input::placeholder {
+.clouds input, .clouds input::placeholder {
   color: #F47775;
 }
 
-.rainy input, .rainy input::placeholder {
+.rain input, .rain input::placeholder {
   color: #164A68;
 }
 
-.sunny input, .sunny input::placeholder {
+.clear input, .clear input::placeholder {
   color:  #2A5510;
   border-radius: 4px;
 }

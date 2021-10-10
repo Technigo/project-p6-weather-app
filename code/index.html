@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <!-- Change the title to your own -->
-  <title>My weather app</title>
+  <title>Ziko's Weather Station. Coming at you Live!</title>
   
   <!-- Connection to the CSS file -->
   <link rel="stylesheet" href="./style.css">
   
   <!-- Link to Montserrat which is used in our design. Feel free to
   use another one or remove this if you don't want a google font. -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&Roboto+Mono:wght@400;600&display=swap" rel="stylesheet">
 </head>
 
 <!-- We gave the body an id to be able to change the background
@@ -30,25 +30,27 @@ any class at all. We will add classes in the JavaScript file instead -->
       innerHTML after we fetched the weather data in the JavaScript.
       We put in some dummy data so that you can see how it will look,
       but we will replace this with the data from the API -->
-      <p>
-        <span id="shortDescription">clear</span> | <span id="temperature"> 23 °C</span>
-      </p>
-      <p id="sunrise">sunrise: 08.00</p>
-      <p id="sunset">sunset: 22.30</p>
+      <h1 id="headline">Today's weather in:</h1>
+      <p id="shortDesc">clear</p>
+      <p id="temp">23 °C</p>
+      <p id="humidity">69 % humidity</p>
+      <p id="sunrise">🌞⬆: 08:00</p>
+      <p id="sunset">🌞⬇: 22:30</p>
     </div>
     <div class="todays-description">
       <!-- Here's another id that we will use to change the source
       of this image after we've fetched the weather data. -->
-      <img src="./assets/sun.svg" id="icon"/>
+      <img src="./assets/unknown.svg" id="icon"/>
       <!-- Another id to be able to change the description -->
-      <h2 id="description">Get your sunnies on. Stockholm is looking rather great today.</h2>
+      <h2 id="desc">Get your sunnies on. Stockholm is looking rather great today.</h2>
     </div>
   </section>
-
+  <h3>Forecast for the next five days:</h3>
   <!-- Another id to be able to add the forecast data to our HTML. -->
   <section id="forecast" class="forecast">
   </section>
-
+<!--   <p id="citySTHLM"><a href="#">Stockholm</a></p>
+  <p id="cityNY"><a href="#">New York</a></p> -->
   <!-- Connection to the JavaScript file -->
   <script type="text/javascript" src="./weather.js"></script>
 </body>
